@@ -12,7 +12,7 @@ run = True
 finish = False
 wd = display.set_mode((800,600))
 display.set_caption('Лабbринт')
-background =transform.scale(image.load('galaxy.jpg'),(800,600))
+background = transform.scale(image.load('galaxy.jpg'),(800,600))
 player = transform.scale(image.load('rocket.png'),(10,20))
 ufo =transform.scale(image.load('ufo.png'),(790,690))
 bullet = transform.scale(image.load('bullet.png'),(5,10))
@@ -80,7 +80,7 @@ while run:
     for e in event.get():
         if e.type == QUIT:
             run = False
-        elif g >=200:
+        elif g >=20:
             wd.blit(text_line3,(400,300))
             finish = True
         elif h >=15:
